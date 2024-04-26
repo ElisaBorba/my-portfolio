@@ -1,0 +1,200 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  animation: appear 2s ease-in-out;
+  animation-range: cover 0% cover 50%;
+  min-height: 100vh;
+}
+
+hr {
+  border: 1px solid #8c08ce;
+  margin: 10px 0;
+}
+
+.dark {
+  background-color: #1b1b1b;
+  color: #fff;
+  transition: all 1s ease;
+}
+
+.light {
+  background-color: #fff;
+  color: #000;
+  transition: all 1s ease;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.projects hr {
+  width: 80%;
+}
+
+.projects h3,
+.projects a {
+  text-align: center;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+.projects div h3 a {
+  color: white;
+  transition: letter-spacing 0.5s ease;
+  padding: 5px;
+  background-color: #8c08ce;
+}
+
+.projects div h3 a:hover {
+  letter-spacing: 2px;
+}
+
+.cardLink {
+  justify-content: center;
+  display: flex !important;
+  padding: 25px 0;
+}
+
+.customCard {
+  transition: transform 0.5s ease;
+}
+
+.customCard:hover {
+  transform: scale(1.02) translateY(-10px);
+}
+
+.carousel .slick-slide.active {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .slick-prev,
+.carousel .slick-next {
+  color: #8c08ce;
+  opacity: 0.5;
+  font-size: 2.2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+.carousel .slick-prev:hover,
+.carousel .slick-next:hover {
+  opacity: 1;
+}
+
+.carousel .slick-prev {
+  left: 1px;
+}
+
+.carousel .slick-next {
+  right: 15px;
+}
+
+.labelTheme {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.labelTheme input {
+  display: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.sunIcon {
+  width: 25px;
+  height: 25px;
+  color: #666;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
+  background-color: transparent;
+  transition: 0.6s ease;
+  transition-delay: 0.8s;
+}
+
+.inputTheme:checked ~ .sunIcon {
+  transition-delay: 0s;
+  transform: rotate(360deg) scale(0);
+}
+
+.moonIcon {
+  width: 25px;
+  height: 25px;
+  color: #666;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
+  background-color: transparent;
+  transition: 1s ease;
+  transition-delay: 0.09s;
+  position: absolute;
+  transform: scale(0);
+}
+
+.inputTheme:checked ~ .moonIcon {
+  transition-delay: 0s;
+  transform: scale(1) rotate(360deg);
+}
+
+.transitionAll {
+  transition: all 1s ease;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    translate: -100vw 0;
+  }
+  to {
+    opacity: 1;
+    translate: -0 0;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .projects {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 20px;
+  }
+  .projects {
+    font-size: 28px;
+  }
+}

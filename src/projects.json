@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "name": "recipes",
+        "url": "https://github.com/ElisaBorba/recipes-app",
+        "description": "Uma aplicação React móvel para descobrir e compartilhar receitas deliciosas para refeições e drinks! Explore uma ampla variedade de receitas, filtre por categoria, favorite suas favoritas e desfrute de uma experiência culinária completa. Inclui integração com APIs de refeições e drinks!"
+
+    },
+    {
+        "id": 2,
+        "name": "spend",
+        "url": "https://github.com/ElisaBorba/spend-wise",
+        "description": "Uma aplicação React e Redux para gerenciar gastos em várias moedas. Converta facilmente seus gastos para uma moeda escolhida. Desenvolvido com React, Redux e TypeScript. Utiliza uma API de Cotações de Moedas para obter informações atualizadas sobre as moedas."
+
+    },
+    {
+        "id": 3,
+        "name": "buysmith",
+        "url": "https://github.com/ElisaBorba/buy-smith",
+        "description": "O BuySmith é uma aplicação em Typescript que utiliza Sequelize para gerenciar produtos medievais. Conta com autenticação JWT para segurança e oferece funcionalidades para CRUD de itens, proporcionando uma experiência de compra intuitiva."
+    },
+    {
+        "id": 4,
+        "name": "blogsapi",
+        "url": "https://github.com/ElisaBorba/blogs-api",
+        "description": "Gerencie suas publicações de forma eficaz com o Blogs API, uma aplicação backend construída com Node.js e Sequelize. Oferece recursos robustos para CRUD de categorias de posts, usuários e posts associados. A autenticação JWT garante segurança. Utiliza conteinerzação com Docker para facilitar a inicialização."
+    },
+    {
+        "id": 5,
+        "name": "futebolclub",
+        "url": "https://github.com/ElisaBorba/trybe-futebol-club",
+        "description": "Aplicação em TypeScript que gerencia times de futebol. Usa Express.js para as requisições HTTP, com Sequelize para armazenar dados dos times e partidas, JWT para autenticação e oferece funcionalidades de CRUD para times, classificação e partidas."
+    },
+    {
+        "id": 6,
+        "name": "translate",
+        "url": "https://github.com/ElisaBorba/translate-speaker",
+        "description": "Uma ferramenta de tradução entre idiomas, desenvolvida com Flask em Python. Com uma arquitetura MVC, oferece tradução intuitiva e se integra ao MongoDB para armazenamento de dados, incluindo o histórico de traduções."
+    }
+]

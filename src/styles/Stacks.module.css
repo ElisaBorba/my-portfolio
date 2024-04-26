@@ -1,0 +1,64 @@
+.stacks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.stacks h1 {
+  font-family: 'Ropa Sans', sans-serif;
+  margin: 0 15px;
+}
+
+.stacks hr {
+  width: 80%;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 45px;
+}
+
+.icons img {
+  height: auto;
+  width: 20%;
+  border-radius: 25%;
+  box-shadow: 3px 3px 8px rgba(20, 221, 188, 0.9);
+}
+
+@media screen and (min-width: 768px) {
+  .stacks h1 {
+    font-size: 2.5rem;
+  }
+
+  .icons img {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .stacks h1 {
+    font-size: 2.5rem;
+  }
+
+  .icons img {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stacks h1 {
+    font-size: 2.5rem;
+  }
+  .icons {
+    padding: 45px 100px;
+  }
+  .icons img {
+    width: 10%;
+  }
+}
